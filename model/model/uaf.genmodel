@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.uaf/src/main/java" modelPluginID="org.nasdanika.models.uaf"
+    modelName="Uaf" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" bundleManifest="false" complianceLevel="21.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>sysml.ecore</foreignModel>
+  <foreignModel>uaf.ecore</foreignModel>
+  <genPackages prefix="SysML" basePackage="org.nasdanika.models" disposableProviderFactory="true"
+      ecorePackage="sysml.ecore#/">
+    <nestedGenPackages prefix="PortsAndFlows" disposableProviderFactory="true" ecorePackage="sysml.ecore#//PortsAndFlows">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="sysml.ecore#//PortsAndFlows/FeatureDirection">
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FeatureDirection/provided"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FeatureDirection/providedRequired"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FeatureDirection/required"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="sysml.ecore#//PortsAndFlows/FlowDirection">
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FlowDirection/in"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FlowDirection/inout"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//PortsAndFlows/FlowDirection/out"/>
+      </genEnums>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/ItemFlow">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/ItemFlow/itemProperty"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/ProxyPort"/>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/FullPort"/>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/InvocationOnNestedPortAction">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/InvocationOnNestedPortAction/onNestedPort"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/InterfaceBlock"/>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/FlowProperty">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/FlowProperty/direction"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/ChangeStructuralFeatureEvent">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/ChangeStructuralFeatureEvent/structuralFeature"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/TriggerOnNestedPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/TriggerOnNestedPort/onNestedPort"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/AcceptChangeStructuralFeatureEventAction"/>
+      <genClasses ecoreClass="sysml.ecore#//PortsAndFlows/DirectedFeature">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//PortsAndFlows/DirectedFeature/featureDirection"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Activities" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Activities">
+      <genClasses ecoreClass="sysml.ecore#//Activities/Optional"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/Continuous"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/ControlOperator"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/Discrete"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/Overwrite"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/NoBuffer"/>
+      <genClasses ecoreClass="sysml.ecore#//Activities/Probability">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Activities/Probability/probability"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Activities/Rate">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Activities/Rate/rate"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Blocks" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Blocks">
+      <genClasses ecoreClass="sysml.ecore#//Blocks/DistributedProperty"/>
+      <genClasses image="false" ecoreClass="sysml.ecore#//Blocks/ElementPropertyPath">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/ElementPropertyPath/propertyPath"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/AdjunctProperty">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/AdjunctProperty/principal"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/EndPathMultiplicity">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/EndPathMultiplicity/lower"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/EndPathMultiplicity/upper"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/ParticipantProperty">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/ParticipantProperty/end"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/Block">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/Block/isEncapsulated"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/ConnectorProperty">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/ConnectorProperty/connector"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/BindingConnector"/>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/ClassifierBehaviorProperty"/>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/BoundReference">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/BoundReference/bindingPath"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/BoundReference/boundEnd"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/PropertySpecificType"/>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/NestedConnectorEnd"/>
+      <genClasses ecoreClass="sysml.ecore#//Blocks/ValueType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/ValueType/quantityKind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/ValueType/unit"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="sysml.ecore#//Blocks/DirectedRelationshipPropertyPath">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/DirectedRelationshipPropertyPath/sourceContext"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/DirectedRelationshipPropertyPath/sourcePropertyPath"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/DirectedRelationshipPropertyPath/targetContext"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Blocks/DirectedRelationshipPropertyPath/targetPropertyPath"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Allocations" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Allocations">
+      <genClasses ecoreClass="sysml.ecore#//Allocations/Allocate"/>
+      <genClasses ecoreClass="sysml.ecore#//Allocations/AllocateActivityPartition"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Requirements" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Requirements">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="sysml.ecore#//Requirements/VerdictKind">
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Requirements/VerdictKind/error"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Requirements/VerdictKind/fail"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Requirements/VerdictKind/inconclusive"/>
+        <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Requirements/VerdictKind/pass"/>
+      </genEnums>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Copy"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Trace"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/DeriveReqt"/>
+      <genClasses image="false" ecoreClass="sysml.ecore#//Requirements/AbstractRequirement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//Requirements/AbstractRequirement/derived"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//Requirements/AbstractRequirement/derivedFrom"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/id"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//Requirements/AbstractRequirement/master"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/refinedBy"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/satisfiedBy"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/text"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/tracedTo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Requirements/AbstractRequirement/verifiedBy"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Verify"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Refine"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Satisfy"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/TestCase"/>
+      <genClasses ecoreClass="sysml.ecore#//Requirements/Requirement"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="ModelElements" disposableProviderFactory="true" ecorePackage="sysml.ecore#//ModelElements">
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Conform"/>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Problem"/>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Viewpoint">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/concern"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/concernList"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/language"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/method"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/presentation"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Viewpoint/purpose"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//ModelElements/Viewpoint/stakeholder"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Rationale"/>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Expose"/>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/View">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//ModelElements/View/stakeholder"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference sysml.ecore#//ModelElements/View/viewPoint"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/Stakeholder">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Stakeholder/concern"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/Stakeholder/concernList"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//ModelElements/ElementGroup">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/ElementGroup/criterion"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/ElementGroup/member"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/ElementGroup/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/ElementGroup/orderedMemeber"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//ModelElements/ElementGroup/size"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="DeprecatedElements" disposableProviderFactory="true"
+        ecorePackage="sysml.ecore#//DeprecatedElements">
+      <genClasses ecoreClass="sysml.ecore#//DeprecatedElements/FlowPort">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//DeprecatedElements/FlowPort/direction"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//DeprecatedElements/FlowPort/isAtomic"/>
+      </genClasses>
+      <genClasses ecoreClass="sysml.ecore#//DeprecatedElements/FlowSpecification"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="ConstraintBlocks" disposableProviderFactory="true"
+        ecorePackage="sysml.ecore#//ConstraintBlocks">
+      <genClasses ecoreClass="sysml.ecore#//ConstraintBlocks/ConstraintBlock"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Libraries" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Libraries">
+      <nestedGenPackages prefix="ControlValues" disposableProviderFactory="true" ecorePackage="sysml.ecore#//Libraries/ControlValues">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="sysml.ecore#//Libraries/ControlValues/ControlValue">
+          <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Libraries/ControlValues/ControlValue/disable"/>
+          <genEnumLiterals ecoreEnumLiteral="sysml.ecore#//Libraries/ControlValues/ControlValue/enable"/>
+        </genEnums>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="PrimitiveValueTypes" disposableProviderFactory="true"
+          ecorePackage="sysml.ecore#//Libraries/PrimitiveValueTypes">
+        <genDataTypes ecoreDataType="sysml.ecore#//Libraries/PrimitiveValueTypes/Number"/>
+        <genDataTypes ecoreDataType="sysml.ecore#//Libraries/PrimitiveValueTypes/Integer"/>
+        <genDataTypes ecoreDataType="sysml.ecore#//Libraries/PrimitiveValueTypes/String"/>
+        <genDataTypes ecoreDataType="sysml.ecore#//Libraries/PrimitiveValueTypes/Real"/>
+        <genDataTypes ecoreDataType="sysml.ecore#//Libraries/PrimitiveValueTypes/Boolean"/>
+        <genClasses ecoreClass="sysml.ecore#//Libraries/PrimitiveValueTypes/Complex">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/PrimitiveValueTypes/Complex/imaginaryPart"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/PrimitiveValueTypes/Complex/realPart"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="UnitAndQuantityKind" disposableProviderFactory="true"
+          ecorePackage="sysml.ecore#//Libraries/UnitAndQuantityKind">
+        <genClasses ecoreClass="sysml.ecore#//Libraries/UnitAndQuantityKind/QuantityKind">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/QuantityKind/definitionURI"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/QuantityKind/description"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/QuantityKind/symbol"/>
+        </genClasses>
+        <genClasses ecoreClass="sysml.ecore#//Libraries/UnitAndQuantityKind/Unit">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/Unit/definitionURI"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/Unit/description"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference sysml.ecore#//Libraries/UnitAndQuantityKind/Unit/quantityKind"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute sysml.ecore#//Libraries/UnitAndQuantityKind/Unit/symbol"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+  </genPackages>
+  <genPackages prefix="UAF" basePackage="org.nasdanika.models" disposableProviderFactory="true"
+      ecorePackage="uaf.ecore#/">
+    <nestedGenPackages prefix="Operational" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational">
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Structure">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Operational/Structure/OperationalAgent"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalArchitecture"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/KnownResource"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalPerformer"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/ProblemDomain"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalPort"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalMethod"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Structure/OperationalParameter"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Operational/Taxonomy/ArbitraryConnector"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Operational/Taxonomy/ConceptItem"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Taxonomy/ConceptRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Taxonomy/HighLevelOperationalConcept"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Connectivity">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/MaterielExchange"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/OrganizationalExchange"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/EnergyExchange"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/InformationExchange"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/ConfigurationExchange"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Operational/Connectivity/OperationalExchangeKind/GeoPoliticalExtentExchange"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalConnector"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalInterface"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalExchange">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Operational/Connectivity/OperationalExchange/exchangeKind"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Operational/Connectivity/OperationalExchange/trustLevel"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalExchangeItem">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Operational/Connectivity/OperationalExchangeItem/activity"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalSignal"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Connectivity/OperationalSignalProperty"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Constraints">
+        <genClasses ecoreClass="uaf.ecore#//Operational/Constraints/OperationalConstraint"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Operational/Constraints/SubjectOfOperationalConstraint"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Information">
+        <genClasses ecoreClass="uaf.ecore#//Operational/Information/InformationElement"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Operational/InteractionScenarios">
+        <genClasses ecoreClass="uaf.ecore#//Operational/InteractionScenarios/OperationalMessage"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Operational/Processes/OperationalActivity">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Operational/Processes/OperationalActivity/activityAffectedResource"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Processes/OperationalActivityAction"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Operational/Processes/OperationalActivityEdge"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Processes/OperationalControlFlow"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Processes/OperationalObjectFlow"/>
+        <genClasses ecoreClass="uaf.ecore#//Operational/Processes/StandardOperationalActivity"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/States">
+        <genClasses ecoreClass="uaf.ecore#//Operational/States/OperationalStateDescription"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Operational/Traceability"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Metadata" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata">
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Structure"/>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Taxonomy">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Taxonomy/ActualState">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Metadata/Taxonomy/ActualState/endDate"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Metadata/Taxonomy/ActualState/startDate"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Taxonomy/ISO8601DateTime"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Connectivity">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Connectivity/Exchange"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Connectivity/Resource"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Constraints">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Metadata/Constraints/RuleKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/StructuralAssertion"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/ActionAssertion"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/Derivation"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/Contract"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/Constraint"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/Guidance"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/SecurityPolicy"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Constraints/RuleKind/Caveat"/>
+        </genEnums>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Constraints/Rule">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Constraints/Rule/ruleKind"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Information">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Metadata/Information/InformationKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/InformationKind/Information"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/InformationKind/DomainInformation"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/InformationKind/PositionReferenceFrame"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/InformationKind/PedigreeInformation"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/InformationKind/Data"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Metadata/Information/DataModelKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/DataModelKind/Conceptual"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/DataModelKind/Logical"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Metadata/Information/DataModelKind/Physical"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Information/Information">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/Information/informationKind"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Information/Metadata">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/Metadata/dublinCoreElement"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/Metadata/metaDataScheme"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/Metadata/name"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/Metadata/category"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Information/ArchitectureMetadata"/>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Information/DataModel">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Metadata/Information/DataModel/kind"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Metadata/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Processes">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Processes/Activity">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Metadata/Processes/Activity/activityPerformableUnderCondition"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Metadata/Processes/CapableElement"/>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Processes/IsCapableToPerform"/>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Processes/PerformsInContext"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/States"/>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Metadata/Traceability">
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Traceability/Implements"/>
+        <genClasses ecoreClass="uaf.ecore#//Metadata/Traceability/ArchitecturalReference"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Services" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services">
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Structure">
+        <genClasses ecoreClass="uaf.ecore#//Services/Structure/ServicePort"/>
+        <genClasses ecoreClass="uaf.ecore#//Services/Structure/ServiceSpecificationRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Services/Structure/ServiceMethod"/>
+        <genClasses ecoreClass="uaf.ecore#//Services/Structure/ServiceParameter"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Services/Taxonomy/ServiceSpecification"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Connectivity">
+        <genClasses ecoreClass="uaf.ecore#//Services/Connectivity/ServiceConnector"/>
+        <genClasses ecoreClass="uaf.ecore#//Services/Connectivity/ServiceInterface"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Constraints">
+        <genClasses ecoreClass="uaf.ecore#//Services/Constraints/ServicePolicy"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Services/InteractionScenarios">
+        <genClasses ecoreClass="uaf.ecore#//Services/InteractionScenarios/ServiceMessage"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Services/Processes/ServiceFunction"/>
+        <genClasses ecoreClass="uaf.ecore#//Services/Processes/ServiceFunctionAction"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/States">
+        <genClasses ecoreClass="uaf.ecore#//Services/States/ServiceStateDescription"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Services/Traceability">
+        <genClasses ecoreClass="uaf.ecore#//Services/Traceability/Consumes"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Resources" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources">
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Structure">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Resources/Structure/RoleKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/Part"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/Component"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/UsedConfiguration"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/HumanResource"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/Platform"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/System"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/SubOrganization"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/PostRole"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/ResponsibilityRole"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/Equipment"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/SubSystemPart"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/UsedPhysicalArchitecture"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/HostedSoftware"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/ArtifactComponent"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/NaturalResourceComponent"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Structure/RoleKind/Other"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Structure/ResourceRole">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Resources/Structure/ResourceRole/roleKind"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Structure/ResourcePort"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Structure/ResourceMethod"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Structure/ResourceParameter"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/CapabilityConfiguration">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Taxonomy/CapabilityConfiguration/doctrine"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/NaturalResource"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Taxonomy/PhysicalResource"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/ResourceArchitecture"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/ResourceArtifact"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/Software"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Taxonomy/ResourcePerformer">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Taxonomy/ResourcePerformer/milestone"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Resources/Taxonomy/ResourcePerformer/isStandardConfiguration"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Taxonomy/System"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Connectivity">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Resources/Connectivity/ResourceExchangeKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Connectivity/ResourceExchangeKind/ResourceCommunication"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Connectivity/ResourceExchangeKind/ResourceMovement"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Connectivity/ResourceExchangeKind/ResourceEnergyFlow"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Connectivity/ResourceExchangeKind/GeoPoliticalExtentExchange"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceExchange">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Resources/Connectivity/ResourceExchange/exchangeKind"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceInterface"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceConnector">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Connectivity/ResourceConnector/boundaryCondition"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceExchangeItem">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Connectivity/ResourceExchangeItem/function"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceSignal"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Connectivity/ResourceSignalProperty"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Constraints">
+        <genClasses ecoreClass="uaf.ecore#//Resources/Constraints/ResourceConstraint"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Constraints/SubjectOfResourceConstraint"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Information">
+        <genClasses ecoreClass="uaf.ecore#//Resources/Information/DataElement"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Resources/InteractionScenarios">
+        <genClasses ecoreClass="uaf.ecore#//Resources/InteractionScenarios/ResourceMessage"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Resources/Processes/Function">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Processes/Function/affectedResource"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Processes/FunctionAction"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Processes/FunctionControlFlow"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Processes/FunctionEdge"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Processes/FunctionObjectFlow"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Roadmap">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Resources/Roadmap/WholeLifeConfigurationKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Roadmap/WholeLifeConfigurationKind/Service"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Roadmap/WholeLifeConfigurationKind/ResourcePerformer"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Resources/Roadmap/WholeLifeConfigurationKind/OrganizationalResource"/>
+        </genEnums>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Roadmap/VersionedElement">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Roadmap/VersionedElement/versionReleasedAtMilestone"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Roadmap/VersionedElement/versionWithdrawnAtMilestone"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Roadmap/Forecast">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Roadmap/Forecast/forecastPeriod"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Roadmap/SubjectOfForecast"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Roadmap/Technology"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Roadmap/VersionOfConfiguration"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Roadmap/VersionSuccession"/>
+        <genClasses ecoreClass="uaf.ecore#//Resources/Roadmap/WholeLifeConfiguration">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Resources/Roadmap/WholeLifeConfiguration/kind"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/States">
+        <genClasses ecoreClass="uaf.ecore#//Resources/States/ResourceStateDescription"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Resources/Traceability">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Resources/Traceability/ProtocolImplementation">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Resources/Traceability/ProtocolImplementation/implements"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Strategic" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic">
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Structure">
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Structure/StructuralPart"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Structure/CapabilityRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Structure/TemporalPart"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/resourceArchitectureOfEnterprisePhase"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/operationalArchitectureOfEnterprisePhase"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/vision"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/goal"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/statementTask"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/ActualEnterprisePhase/concern"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/Capability"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/EnterpriseGoal">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Strategic/Taxonomy/EnterpriseGoal/benefits"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/EnterpriseGoal/enterprisePhase"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/EnterprisePhase"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/EnterpriseVision">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/EnterpriseVision/statement"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Taxonomy/EnterpriseVision/enterprisePhase"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/VisionStatement"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Taxonomy/WholeLifeEnterprise"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Connectivity"/>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Constraints"/>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Strategic/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Processes/ActualEnduringTask"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Processes/CapabilityForTask"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Processes/EnduringTask"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/States">
+        <genClasses ecoreClass="uaf.ecore#//Strategic/States/AchievedEffect">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/States/AchievedEffect/desiredEffect"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Strategic/States/Achiever"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/States/DesiredEffect">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/States/DesiredEffect/achievedEffect"/>
+        </genClasses>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Strategic/States/Desirer"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Strategic/Traceability">
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Traceability/Exhibits">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Strategic/Traceability/Exhibits/environmentalConditions"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Traceability/MapsToCapability"/>
+        <genClasses ecoreClass="uaf.ecore#//Strategic/Traceability/OrganizationInEnterprise"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="ActualResources" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources">
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualResponsibility"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualPost"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/FieldedCapability"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualOrganizationalResource"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualOrganization">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//ActualResources/Taxonomy/ActualOrganization/ratifiedStandards"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//ActualResources/Taxonomy/ActualOrganization/shortName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//ActualResources/Taxonomy/ActualOrganization/serviceType"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualResource">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//ActualResources/Taxonomy/ActualResource/milestone"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//ActualResources/Taxonomy/ActualResource/actualCondition"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualPerson"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//ActualResources/Taxonomy/ActualResponsibleResource"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Structure">
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Structure/ActualResourceRole"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Structure/ActualOrganizationRole"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Connectivity">
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Connectivity/ActualResourceRelationship"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Connectivity/FillsPost">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//ActualResources/Connectivity/FillsPost/startDate"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//ActualResources/Connectivity/FillsPost/endDate"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Processes"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/States"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//ActualResources/InteractionScenarios"/>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Information"/>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Constraints">
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Constraints/ActualService"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Constraints/ProvidedServiceLevel"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Constraints/RequiredServiceLevel"/>
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Constraints/ProvidesCompetence"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Roadmap"/>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//ActualResources/Traceability">
+        <genClasses ecoreClass="uaf.ecore#//ActualResources/Traceability/OwnsProcess"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Personnel" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel">
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Constraints">
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Constraints/Competence"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Constraints/CompetenceForRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Constraints/RequiresCompetence"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Personnel/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Processes/CompetenceToConduct"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/States"/>
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Taxonomy/Organization"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Personnel/Taxonomy/OrganizationalResource"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Taxonomy/Person"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Taxonomy/Post"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Taxonomy/Responsibility"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Connectivity">
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Connectivity/Control"/>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Connectivity/Command"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Structure"/>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Personnel/Traceability">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Personnel/Traceability/ResponsibleRoleKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Personnel/Traceability/ResponsibleRoleKind/Manager"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Personnel/Traceability/ResponsibleRoleKind/ResponsibleOwner"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Personnel/Traceability/ResponsibleFor">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Personnel/Traceability/ResponsibleFor/responsibleRoleKind"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Personnel/Traceability/ResponsibleFor/startDate"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Personnel/Traceability/ResponsibleFor/endDate"/>
+        </genClasses>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Security" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security">
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Taxonomy">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Security/Taxonomy/Asset">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Security/Taxonomy/Asset/categoryCategorizesAsset"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Security/Taxonomy/OperationalMitigation"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Taxonomy/ResourceMitigation"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Taxonomy/SecurityEnclave"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Security/Taxonomy/OperationalAsset"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Security/Taxonomy/ResourceAsset"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Connectivity"/>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Constraints">
+        <genClasses image="false" ecoreClass="uaf.ecore#//Security/Constraints/SubjectOfSecurityConstraint"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Constraints/SecurityConstraint"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Constraints/Risk"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Constraints/ActualRisk">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Security/Constraints/ActualRisk/actualRiskOwner"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Security/Constraints/ActualRisk/affectedActualResource"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Security/Constraints/SecurityControl">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Security/Constraints/SecurityControl/mitigatingActualResource"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Security/Constraints/SecurityControlFamily"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Security/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/EnhancedSecurityControl"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/SecurityProcessAction"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/SecurityProcess"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/Enhances"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/Protects"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Processes/ProtectsInContext"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/States"/>
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Structure">
+        <genClasses ecoreClass="uaf.ecore#//Security/Structure/InformationRole"/>
+        <genClasses image="false" ecoreClass="uaf.ecore#//Security/Structure/AssetRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Structure/DataRole"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Security/Traceability">
+        <genClasses ecoreClass="uaf.ecore#//Security/Traceability/Affects"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Traceability/Mitigates"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Traceability/OwnsRisk"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Traceability/OwnsRiskInContext"/>
+        <genClasses ecoreClass="uaf.ecore#//Security/Traceability/AffectsInContext"/>
+      </nestedGenPackages>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Standards" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards">
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Taxonomy">
+        <genClasses ecoreClass="uaf.ecore#//Standards/Taxonomy/Protocol"/>
+        <genClasses ecoreClass="uaf.ecore#//Standards/Taxonomy/ProtocolStack"/>
+        <genClasses ecoreClass="uaf.ecore#//Standards/Taxonomy/Standard">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Standards/Taxonomy/Standard/ratifiedBy"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Standards/Taxonomy/Standard/mandatedDate"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Standards/Taxonomy/Standard/retiredDate"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Connectivity"/>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Constraints"/>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Standards/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Processes"/>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Roadmap"/>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/States"/>
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Structure">
+        <genClasses ecoreClass="uaf.ecore#//Standards/Structure/ProtocolLayer"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Standards/Traceability"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Projects" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects">
+      <nestedGenPackages prefix="Taxonomy" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Taxonomy">
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Projects/Taxonomy/ProjectKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ProjectKind/Programme"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ProjectKind/Portfolio"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ProjectKind/Project"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ProjectKind/PersonnelDevelopment"/>
+        </genEnums>
+        <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind">
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind/InService"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind/Deployed"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind/NoLongerUsed"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind/OutOfService"/>
+          <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Projects/Taxonomy/ActualMilestoneKind/Other"/>
+        </genEnums>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Taxonomy/Project"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Taxonomy/ProjectMilestone">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Taxonomy/ProjectMilestone/resource"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Connectivity" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Connectivity">
+        <genClasses ecoreClass="uaf.ecore#//Projects/Connectivity/ProjectSequence"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Connectivity/MilestoneDependency"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Constraints" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Constraints"/>
+      <nestedGenPackages prefix="Information" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Information"/>
+      <nestedGenPackages prefix="InteractionScenarios" disposableProviderFactory="true"
+          ecorePackage="uaf.ecore#//Projects/InteractionScenarios"/>
+      <nestedGenPackages prefix="Processes" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Processes">
+        <genClasses ecoreClass="uaf.ecore#//Projects/Processes/ProjectActivityAction"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Processes/ProjectActivity"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Roadmap" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Roadmap">
+        <genClasses ecoreClass="uaf.ecore#//Projects/Roadmap/ActualProjectMilestoneRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Roadmap/ActualProjectRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Roadmap/ActualProject">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Roadmap/ActualProject/ownedMilestone"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Projects/Roadmap/ActualProject/projectKind"/>
+        </genClasses>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Roadmap/ActualProjectMilestone">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Roadmap/ActualProjectMilestone/actualResource"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Roadmap/ActualProjectMilestone/milestoneEndDate"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Roadmap/ActualProjectMilestone/versionReleased"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference uaf.ecore#//Projects/Roadmap/ActualProjectMilestone/versionWithdrawn"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Projects/Roadmap/ActualProjectMilestone/kind"/>
+        </genClasses>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="States" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/States"/>
+      <nestedGenPackages prefix="Structure" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Structure">
+        <genClasses ecoreClass="uaf.ecore#//Projects/Structure/ProjectRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Structure/ProjectMilestoneRole"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Structure/ProjectTheme"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Structure/StatusIndicators"/>
+        <genClasses ecoreClass="uaf.ecore#//Projects/Structure/ProjectStatus"/>
+      </nestedGenPackages>
+      <nestedGenPackages prefix="Traceability" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Projects/Traceability"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="SummaryandOverview" disposableProviderFactory="true"
+        ecorePackage="uaf.ecore#//SummaryandOverview">
+      <genClasses image="false" ecoreClass="uaf.ecore#//SummaryandOverview/Architecture">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/Architecture/describedBy"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="uaf.ecore#//SummaryandOverview/Stakeholder">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/Stakeholder/stakeholderConcern"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="uaf.ecore#//SummaryandOverview/UAFElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/UAFElement/conformsTo"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/UAFElement/URI"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//SummaryandOverview/Concern">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/Concern/enterprisePhase"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//SummaryandOverview/ArchitecturalDescription">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/approvalAuthority"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/architect"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/assumptionAndConstraint"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/creatingOrganization"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/dateCompleted"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/purpose"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/recommendations"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/summaryOfFindings"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/toolsUsed"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/toBe"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/architectureFramework"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/ArchitecturalDescription/view"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/ArchitecturalDescription/viewpoint"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/methodologyUsed"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/status"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/ArchitecturalDescription/version"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//SummaryandOverview/View">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/View/viewpoint"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//SummaryandOverview/Viewpoint">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/Viewpoint/language"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/Viewpoint/method"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//SummaryandOverview/Viewpoint/purpose"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/Viewpoint/stakeholder"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//SummaryandOverview/Viewpoint/concern"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Dictionary" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Dictionary">
+      <genClasses ecoreClass="uaf.ecore#//Dictionary/Alias">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Dictionary/Alias/nameOwner"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Dictionary/Definition">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Dictionary/Definition/author"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Dictionary/SameAs"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Parameters" disposableProviderFactory="true" ecorePackage="uaf.ecore#//Parameters">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Parameters/EnvironmentKind">
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/EnvironmentKind/TerrainType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/EnvironmentKind/WeatherConditions"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/EnvironmentKind/LightConditions"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/EnvironmentKind/CBRNEnvironment"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/EnvironmentKind/SituationType"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Parameters/LocationTypeKind">
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/OtherType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/SolidVolumeType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/SurfaceType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/LineType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/PointType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/GeoStationaryPointType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/PlanarSurfaceType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/PolygonAreaType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/RectangularAreaType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/ElipticalAreaType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationTypeKind/CircularAreaType"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Parameters/ActualMeasurementKind">
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/ActualMeasurementKind/Actual"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/ActualMeasurementKind/Required"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/ActualMeasurementKind/Estimate"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind">
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/GeoFeatureType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/RegionOfCountryType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/CountryType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/RegionOfWorldType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/FacilityType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/SiteType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/InstallationType"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/GeoPoliticalExtentTypeKind/OtherType"/>
+      </genEnums>
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="uaf.ecore#//Parameters/LocationKind">
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/SolidVolume"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/Surface"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/Line"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/Point"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/GeoStationaryPoint"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/PlanarSurface"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/PolygonArea"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/RectangularArea"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/ElipticalArea"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/CircularArea"/>
+        <genEnumLiterals ecoreEnumLiteral="uaf.ecore#//Parameters/LocationKind/Other"/>
+      </genEnums>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/MeasurementSet">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/MeasurementSet/appliesFor"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/EnvironmentProperty"/>
+      <genClasses image="false" ecoreClass="uaf.ecore#//Parameters/MeasurableElement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/MeasurableElement/measurementSet"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/MeasurableElement/actualMeasurementSet"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualCondition"/>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/Measurement">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/Measurement/environmentalContext"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/GeoPoliticalExtentType">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/GeoPoliticalExtentType/customKind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/GeoPoliticalExtentType/kind"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualMeasurement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/ActualMeasurement/intention"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualEnvironment"/>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/Location">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/Location/customKind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/Location/kind"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/Condition"/>
+      <genClasses image="false" ecoreClass="uaf.ecore#//Parameters/PropertySet"/>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualMeasurementSet">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/ActualMeasurementSet/appliesFor"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualPropertySet"/>
+      <genClasses image="false" ecoreClass="uaf.ecore#//Parameters/LocationHolder">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/LocationHolder/physicalLocation"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference uaf.ecore#//Parameters/LocationHolder/requiredEnvironment"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/ActualLocation">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/ActualLocation/address"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/ActualLocation/locationKind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/ActualLocation/customKind"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/ActualLocation/locationNamedByAddress"/>
+      </genClasses>
+      <genClasses ecoreClass="uaf.ecore#//Parameters/Environment">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute uaf.ecore#//Parameters/Environment/kind"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

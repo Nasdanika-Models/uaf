@@ -1,15 +1,10 @@
-import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.sql.ecore.ECoreGenSqlProcessorsCapabilityFactory;
-
-module org.nasdanika.models.sql.ecore {
+module org.nasdanika.models.uaf.ecore {
 		
-	requires transitive org.nasdanika.models.sql;
 	requires transitive org.nasdanika.models.ecore.graph;
 	requires org.eclipse.emf.common;
+	requires org.eclipse.emf.ecore.xmi;
 	
-	exports org.nasdanika.models.sql.ecore;
-	opens org.nasdanika.models.sql.ecore; // For loading resources
-
-	provides CapabilityFactory with	ECoreGenSqlProcessorsCapabilityFactory; 		
+	exports org.nasdanika.models.uaf.ecore;
+	opens org.nasdanika.models.uaf.ecore; // For loading resources
 	
 }

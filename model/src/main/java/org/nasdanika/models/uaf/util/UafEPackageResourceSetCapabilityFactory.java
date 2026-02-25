@@ -14,7 +14,7 @@ public class UafEPackageResourceSetCapabilityFactory extends EPackageCapabilityF
 
 	@Override
 	protected URI getDocumentationURI() {
-		return URI.createURI("https://uaf.models.nasdanika.org/");
+		return URI.createURI("https://uaf.models.nasdanika.org/uaf/");
 	}
 
 }

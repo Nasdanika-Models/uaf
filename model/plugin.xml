@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/PortsAndFlows"
+            class="org.nasdanika.models.SysML.PortsAndFlows.PortsAndFlowsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Activities"
+            class="org.nasdanika.models.SysML.Activities.ActivitiesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Blocks"
+            class="org.nasdanika.models.SysML.Blocks.BlocksPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Allocations"
+            class="org.nasdanika.models.SysML.Allocations.AllocationsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Requirements"
+            class="org.nasdanika.models.SysML.Requirements.RequirementsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/ModelElements"
+            class="org.nasdanika.models.SysML.ModelElements.ModelElementsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/DeprecatedElements"
+            class="org.nasdanika.models.SysML.DeprecatedElements.DeprecatedElementsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/ConstraintBlocks"
+            class="org.nasdanika.models.SysML.ConstraintBlocks.ConstraintBlocksPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Libraries/ControlValues"
+            class="org.nasdanika.models.SysML.Libraries.ControlValues.ControlValuesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Libraries/PrimitiveValueTypes"
+            class="org.nasdanika.models.SysML.Libraries.PrimitiveValueTypes.PrimitiveValueTypesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="http://www.omg.org/spec/SysML/20161101/SysML/Libraries/UnitAndQuantityKind"
+            class="org.nasdanika.models.SysML.Libraries.UnitAndQuantityKind.UnitAndQuantityKindPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Structure"
+            class="org.nasdanika.models.UAF.Operational.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Taxonomy"
+            class="org.nasdanika.models.UAF.Operational.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Connectivity"
+            class="org.nasdanika.models.UAF.Operational.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Constraints"
+            class="org.nasdanika.models.UAF.Operational.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Information"
+            class="org.nasdanika.models.UAF.Operational.Information.InformationPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/InteractionScenarios"
+            class="org.nasdanika.models.UAF.Operational.InteractionScenarios.InteractionScenariosPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/Processes"
+            class="org.nasdanika.models.UAF.Operational.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Operational/States"
+            class="org.nasdanika.models.UAF.Operational.States.StatesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Taxonomy"
+            class="org.nasdanika.models.UAF.Metadata.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Connectivity"
+            class="org.nasdanika.models.UAF.Metadata.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Constraints"
+            class="org.nasdanika.models.UAF.Metadata.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Information"
+            class="org.nasdanika.models.UAF.Metadata.Information.InformationPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Processes"
+            class="org.nasdanika.models.UAF.Metadata.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Metadata/Traceability"
+            class="org.nasdanika.models.UAF.Metadata.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Structure"
+            class="org.nasdanika.models.UAF.Services.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Taxonomy"
+            class="org.nasdanika.models.UAF.Services.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Connectivity"
+            class="org.nasdanika.models.UAF.Services.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Constraints"
+            class="org.nasdanika.models.UAF.Services.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/InteractionScenarios"
+            class="org.nasdanika.models.UAF.Services.InteractionScenarios.InteractionScenariosPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Processes"
+            class="org.nasdanika.models.UAF.Services.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/States"
+            class="org.nasdanika.models.UAF.Services.States.StatesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Services/Traceability"
+            class="org.nasdanika.models.UAF.Services.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Structure"
+            class="org.nasdanika.models.UAF.Resources.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Taxonomy"
+            class="org.nasdanika.models.UAF.Resources.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Connectivity"
+            class="org.nasdanika.models.UAF.Resources.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Constraints"
+            class="org.nasdanika.models.UAF.Resources.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Information"
+            class="org.nasdanika.models.UAF.Resources.Information.InformationPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/InteractionScenarios"
+            class="org.nasdanika.models.UAF.Resources.InteractionScenarios.InteractionScenariosPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Processes"
+            class="org.nasdanika.models.UAF.Resources.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Roadmap"
+            class="org.nasdanika.models.UAF.Resources.Roadmap.RoadmapPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/States"
+            class="org.nasdanika.models.UAF.Resources.States.StatesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Resources/Traceability"
+            class="org.nasdanika.models.UAF.Resources.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Strategic/Structure"
+            class="org.nasdanika.models.UAF.Strategic.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Strategic/Taxonomy"
+            class="org.nasdanika.models.UAF.Strategic.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Strategic/Processes"
+            class="org.nasdanika.models.UAF.Strategic.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Strategic/States"
+            class="org.nasdanika.models.UAF.Strategic.States.StatesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Strategic/Traceability"
+            class="org.nasdanika.models.UAF.Strategic.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/ActualResources/Taxonomy"
+            class="org.nasdanika.models.UAF.ActualResources.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/ActualResources/Structure"
+            class="org.nasdanika.models.UAF.ActualResources.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/ActualResources/Connectivity"
+            class="org.nasdanika.models.UAF.ActualResources.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/ActualResources/Constraints"
+            class="org.nasdanika.models.UAF.ActualResources.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/ActualResources/Traceability"
+            class="org.nasdanika.models.UAF.ActualResources.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Personnel/Constraints"
+            class="org.nasdanika.models.UAF.Personnel.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Personnel/Processes"
+            class="org.nasdanika.models.UAF.Personnel.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Personnel/Taxonomy"
+            class="org.nasdanika.models.UAF.Personnel.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Personnel/Connectivity"
+            class="org.nasdanika.models.UAF.Personnel.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Personnel/Traceability"
+            class="org.nasdanika.models.UAF.Personnel.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Security/Taxonomy"
+            class="org.nasdanika.models.UAF.Security.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Security/Constraints"
+            class="org.nasdanika.models.UAF.Security.Constraints.ConstraintsPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Security/Processes"
+            class="org.nasdanika.models.UAF.Security.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Security/Structure"
+            class="org.nasdanika.models.UAF.Security.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Security/Traceability"
+            class="org.nasdanika.models.UAF.Security.Traceability.TraceabilityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Standards/Taxonomy"
+            class="org.nasdanika.models.UAF.Standards.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Standards/Structure"
+            class="org.nasdanika.models.UAF.Standards.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Projects/Taxonomy"
+            class="org.nasdanika.models.UAF.Projects.Taxonomy.TaxonomyPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Projects/Connectivity"
+            class="org.nasdanika.models.UAF.Projects.Connectivity.ConnectivityPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Projects/Processes"
+            class="org.nasdanika.models.UAF.Projects.Processes.ProcessesPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Projects/Roadmap"
+            class="org.nasdanika.models.UAF.Projects.Roadmap.RoadmapPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Projects/Structure"
+            class="org.nasdanika.models.UAF.Projects.Structure.StructurePackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/SummaryandOverview"
+            class="org.nasdanika.models.UAF.SummaryandOverview.SummaryandOverviewPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Dictionary"
+            class="org.nasdanika.models.UAF.Dictionary.DictionaryPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated uaf -->
+      <package
+            uri="https://www.omg.org/spec/UAF/20190615/UAF/Parameters"
+            class="org.nasdanika.models.UAF.Parameters.ParametersPackage"
+            genModel="model/uaf.genmodel"/>
+   </extension>
+
+</plugin>
