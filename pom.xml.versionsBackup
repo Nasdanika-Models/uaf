@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.nasdanika.models.uaf</groupId>
 	<artifactId>parent</artifactId>
-	<version>2026.2.0</version>
+	<version>2025.12.0</version>
 	<packaging>pom</packaging>
 	<name>Unified Architecture Framework (UAF) Ecore model</name>
 	<description>UAF model and documentation generator</description>
